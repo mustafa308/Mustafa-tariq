@@ -1,0 +1,28 @@
+📸 ADD YOUR PROFESSIONAL PHOTO
+
+To add your professional photo to the portfolio:
+
+1. SAVE YOUR PHOTO:
+   - Save your professional photo as "profile-photo.jpg"
+   - Place it in the same folder as index.html
+   - Make sure the file is named exactly: "profile-photo.jpg"
+
+2. PHOTO SPECIFICATIONS:
+   - Recommended size: 300x300 pixels or larger
+   - Format: JPG, JPEG, or PNG
+   - File name: "profile-photo.jpg"
+
+3. WHERE IT WILL APPEAR:
+   - Hero section (main profile picture)
+   - About section (secondary image)
+
+4. ALTERNATIVE NAMES:
+   If you want to use a different filename, update these lines in index.html:
+   - Line with: src="profile-photo.jpg"
+   - Change to your actual filename
+
+5. TEST:
+   - Open index.html in your browser
+   - Your photo should appear in both sections
+
+Your professional photo will automatically be displayed in the portfolio once you add the file! 
