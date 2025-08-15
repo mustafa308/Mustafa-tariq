@@ -3,178 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        .photo {
-            max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin: 20px 0;
-        }
-        .description {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin: 20px 0;
-        }
-        .github-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 15px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            margin: 20px 10px;
-            transition: all 0.3s ease;
-        }
-        .github-link:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-        }
-        
-        /* Projects Section Styles */
-        .projects {
-            margin: 40px 0;
-        }
-        .projects h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-        .project-card {
-            background: rgba(255,255,255,0.1);
-            border-radius: 20px;
-            padding: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-            transition: all 0.3s ease;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-        }
-        .project-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 15px;
-            margin-bottom: 20px;
-        }
-        .project-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #fff;
-        }
-        .project-content p {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            color: rgba(255,255,255,0.9);
-        }
-        .project-links {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-        }
-        .project-link {
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-        .project-link:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-        }
-        
-        @media (max-width: 768px) {
-            .project-grid {
-                grid-template-columns: 1fr;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            .projects h2 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <title>Mustafa - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Project</h1>
-        <div class="description">
-            <p>This is a beautiful project deployed on GitHub Pages!</p>
-            <p>Feel free to customize this page with your own content.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Mustafa Tariq</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ai-tools" class="nav-link">AI Tools Proficiency</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        
-        <img src="about-photo.jpg" alt="About Photo" class="photo">
-        
-        <div class="description">
-            <p>Your project is now live on GitHub Pages!</p>
-        </div>
-        
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center" alt="Project 1" class="project-image">
-                    <div class="project-content">
-                        <h3>Web Development Project</h3>
-                        <p>A modern web application built with HTML, CSS, and JavaScript.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-link">Source Code</a>
-                        </div>
-                    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Mustafa Tariq</span>
+                </h1>
+                <h2 class="hero-subtitle">Professional Developer</h2>
+                <p class="hero-description">
+                    Welcome to my portfolio! I create amazing digital experiences
+                    with passion for innovation and clean code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
-                
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&crop=center" alt="E-commerce Platform" class="project-image">
-                    <div class="project-content">
-                        <h3>E-commerce Platform</h3>
-                        <p>Full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-link">Source Code</a>
+                <div class="hero-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="profile-photo.jpg" alt="Mustafa Tariq - Professional Portrait">
+                        <div class="profile-overlay">
+                            <div class="profile-info">
+                                <h3>Mustafa Tariq</h3>
+                                <p>Professional Developer</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <a href="https://github.com" class="github-link" target="_blank">
-            View on GitHub
-        </a>
-    </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hi there! I'm a passionate final year software engineering student with a focus on creating exceptional digital experiences and innovative solutions.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Image removed as requested -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4F46E5/FFFFFF?text=E-Commerce" alt="E-Commerce App">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce application with payment integration, user authentication, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4F46E5/FFFFFF?text=Task+Manager" alt="Task Manager">
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates, team features, and progress tracking.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Express.js</span>
+                            <span>Socket.io</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4F46E5/FFFFFF?text=Weather+App" alt="Weather App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>A responsive weather application with location-based forecasts, interactive maps, and detailed weather data.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Weather API</span>
+                            <span>CSS3</span>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Proficiency Section -->
+    <section id="ai-tools" class="ai-tools">
+        <div class="container">
+            <h2 class="section-title">AI Tools Proficiency</h2>
+            <p style="text-align:center; font-size:1.1rem; color:#333; margin-bottom:2rem;">I leverage cutting-edge AI tools to enhance productivity and deliver exceptional results.</p>
+            <div class="ai-tools-content">
+                <div class="ai-tool">
+                    <img src="chatgpt.jpg" alt="ChatGPT" style="width:60px;height:60px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:1rem;display:block;margin-left:auto;margin-right:auto;">
+                    <h3>ChatGPT</h3>
+                    <p>Expert in leveraging ChatGPT for content generation, coding assistance, and conversational AI solutions.</p>
+                </div>
+                <div class="ai-tool">
+                    <img src="copilot.jpg" alt="GitHub Copilot" style="width:60px;height:60px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:1rem;display:block;margin-left:auto;margin-right:auto;">
+                    <h3>GitHub Copilot</h3>
+                    <p>Proficient in using GitHub Copilot to accelerate coding, automate repetitive tasks, and boost software development productivity.</p>
+                </div>
+                <div class="ai-tool">
+                    <h3>Cursor</h3>
+                    <p>Experienced in using Cursor for AI-powered code navigation, search, and productivity enhancements in software projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mustafatariq462@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>03431630330</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>New York, NY</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mustafa. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html> 
